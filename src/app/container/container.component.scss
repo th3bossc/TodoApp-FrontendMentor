@@ -1,0 +1,36 @@
+.container {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 100dvh;
+    &::before {
+        content : '';
+        background-image: url("/assets/bg-desktop-dark.jpg");
+        height : 33dvh;
+        background-size: cover;
+        width : 100%;
+        top : 0;
+        position : absolute;
+        z-index : -1;
+    }
+    .todos {
+        width : 90dvw;
+        max-width : 800px;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            width : 100%;
+
+            .text {
+                font-weight: 400;
+                font-size : 2rem;
+                letter-spacing: 0.2cap;
+            }
+
+            margin : 2rem 0;
+        }
+
+        
+    }
+}
