@@ -1,27 +1,74 @@
-# TodoApp
+# Frontend Mentor - Todo app solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add new todos to the list
+- Mark todos as complete
+- Delete todos from the list
+- Filter by all/active/complete todos
+- Clear all completed todos
+- Toggle light and dark mode
+- **Bonus**: Drag and drop to reorder items on the list
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshot
 
-## Running end-to-end tests
+![](./screenshot-light.png)
+![](./screenshot-dark.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Links
 
-## Further help
+- Live Site URL: [Hosted on Github Pages](https://th3bossc.github.io/TodoApp-FrontendMentor/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [AngularJs](https://angular.io/) - JS Framework
+- [Angular Material](https://material.angular.io/) - For drag and drop functionality
+- [Sass](https://sass-lang.com/) - CSS Preprocessor
+
+
+### What I learned
+
+I learnt to work with drag and drop API in Javascript, and how to use prewritten APIs and components from Angular Material throughout this project
+
+
+### Useful resources
+
+- [Angular Documentation](https://angular.io/) - Angular is one of the best JavaScript frameworks available and it makes writing frontend code much easier than vanilla Javascript
+- [Angular Material Drag and Drop API](https://material.angular.io/cdk/drag-drop/overview) - Drag and drop API provided by Angular Material has additional functionality such as easier binding with javascript elements such as arrays to keep track of change, as well as documentation on how to create smooth animations that work well with the dragging function.
+
+## Author
+
+- Website - [Diljith P D](https://th3bossc.github.io/Portfolio/)
+- Frontend Mentor - [@th3bossc](https://www.frontendmentor.io/profile/th3bossc)
+
+## Acknowledgments
+
+I thank my collegues for helping me in the challenges i faced, as well as the youtube channels, Kevin Powell and webdevsimplified for the robust frontend tips which came in handy while working on this website
