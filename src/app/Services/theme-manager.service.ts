@@ -9,6 +9,7 @@ export class ThemeManagerService {
 
   constructor(@Inject(DOCUMENT) private document : Document) {
     effect(() => this.changeTheme(this.currentTheme()));
+    effect(() => this.saveTheme(this.currentTheme()));
   }
 
   changeTheme(theme : boolean) {
@@ -22,5 +23,13 @@ export class ThemeManagerService {
     }
   }
 
+  saveTheme(theme : boolean) {
+    localStorage.setItem('theme', theme ? 'dark' : 'light');
+  }
+
+  loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    this.currentTheme.set(savedTheme === 'dark' ? true : false);
+  }
 
 }
