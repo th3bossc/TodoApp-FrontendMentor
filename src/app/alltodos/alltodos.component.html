@@ -1,4 +1,4 @@
-<div class="container">
+<div [class]="'container ' + (themeService.currentTheme() ? 'dark' : 'light')">
     <div 
         class="todos" 
         cdkDropList 
@@ -12,6 +12,7 @@
                 <img src="../../assets/icon-check.svg" /> 
             </div> 
             {{todo.content}} 
+            <a class="delete" (click)="deleteTodo(i)"> <img src="/assets/icon-cross.svg" /> </a>
         </div>
     </div>
     <div class="meta-data">

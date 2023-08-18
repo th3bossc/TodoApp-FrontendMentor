@@ -1,8 +1,29 @@
 .container {
+    border-radius : 5px;
+    &.dark {
+        .input-form {
+            background-color: hsl(237, 14%, 26%);
+            input {
+                color : white;
+                background-color: hsl(237, 14%, 26%);
+            }
+        }
+        // filter : drop-shadow(0 0 8px #111);
+    }
+    &.light {
+        .input-form {
+            background-color: hsl(0, 0%, 98%);
+            input {
+                color : black;
+                background-color: hsl(0, 0%, 98%);
+            }
+        }
+        // filter : drop-shadow(0 0 8px #eee);
+    }
     .input-form {
         padding : 0 1rem;
         width : 100%;
-        background-color: hsl(237, 14%, 26%);
+        // background-color: hsl(237, 14%, 26%);
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -10,14 +31,13 @@
         .select {
             position : relative;
             border-radius: 50%;
-            border: 1px solid white;
+            border: 1px solid lightgray;
             width : 1.2rem;
             height : 1.2rem;
             aspect-ratio: 1;
         }
         input {
-            color : white;
-            background-color: hsl(237, 14%, 26%);
+            font-family : 'Josefin Sans', sans-serif;
             padding : 1rem;
             // width : 100%;
             border-radius: 4px;

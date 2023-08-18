@@ -2,12 +2,9 @@ import { Component, effect, WritableSignal, signal } from '@angular/core';
 import { TodoManagerService, todoInterface } from '../Services/todo-manager.service';
 import {
   CdkDragDrop,
-  CdkDrag,
-  CdkDropList,
-  CdkDropListGroup,
   moveItemInArray,
-  transferArrayItem,
 } from '@angular/cdk/drag-drop';
+import { ThemeManagerService } from '../Services/theme-manager.service';
 
 @Component({
   selector: 'app-alltodos',
@@ -18,7 +15,7 @@ export class AlltodosComponent {
   allTodos : todoInterface[];
   itemsLeft : number;
   mode : WritableSignal<string> = signal('all');
-  constructor (private todoService : TodoManagerService) {
+  constructor (private todoService : TodoManagerService, public themeService : ThemeManagerService) {
     effect(() => {
       if (this.mode() === 'all')
         this.allTodos = this.todoService.allTodos();
@@ -44,5 +41,9 @@ export class AlltodosComponent {
 
   clearCompleted() {
     this.todoService.clearCompleted();
+  }
+
+  deleteTodo(index : number) {
+    this.todoService.deleteTodo(index);
   }
 }

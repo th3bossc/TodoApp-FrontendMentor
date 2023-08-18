@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { TodoManagerService } from '../Services/todo-manager.service';
+import { ThemeManagerService } from '../Services/theme-manager.service';
 
 @Component({
   selector: 'app-new-todo',
@@ -10,7 +11,7 @@ import { TodoManagerService } from '../Services/todo-manager.service';
 export class NewTodoComponent {
   newTodoForm : FormGroup;
 
-  constructor(private todoService : TodoManagerService) { }
+  constructor(private todoService : TodoManagerService, public themeService : ThemeManagerService) { }
 
   ngOnInit() {
     this.newTodoForm = new FormGroup({

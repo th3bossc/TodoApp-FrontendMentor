@@ -1,4 +1,4 @@
-<div class="container">
+<div [class]="'container ' + (themeService.currentTheme() ? 'dark' : 'light')">
     <form id="new-todo-form" [formGroup]="newTodoForm" (ngSubmit)="onSubmit()">
         <div class="input-form">
             <div class="select"></div>
