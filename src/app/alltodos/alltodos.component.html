@@ -9,10 +9,10 @@
             *ngFor="let todo of allTodos; let i = index"
             cdkDrag> 
             <div class="select" (click)="toggleCompleted(i)"> 
-                <img src="../../assets/icon-check.svg" /> 
+                <img src="./assets/icon-check.svg" /> 
             </div> 
             {{todo.content}} 
-            <a class="delete" (click)="deleteTodo(i)"> <img src="/assets/icon-cross.svg" /> </a>
+            <a class="delete" (click)="deleteTodo(i)"> <img src="./assets/icon-cross.svg" /> </a>
         </div>
     </div>
     <div class="meta-data">

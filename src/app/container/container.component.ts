@@ -12,12 +12,12 @@ export class ContainerComponent {
   constructor(private themeService : ThemeManagerService) {
     effect(() => {
       if (!this.themeService.currentTheme()) {
-        this.imageLocation = '/assets/icon-moon.svg';
-        this.backgroundImage = '/assets/bg-desktop-light.jpg';
+        this.imageLocation = './assets/icon-moon.svg';
+        this.backgroundImage = './assets/bg-desktop-light.jpg';
       }
       else {
-        this.imageLocation = '/assets/icon-sun.svg';
-        this.backgroundImage = '/assets/bg-desktop-dark.jpg';
+        this.imageLocation = './assets/icon-sun.svg';
+        this.backgroundImage = './assets/bg-desktop-dark.jpg';
       }
     })
   }
