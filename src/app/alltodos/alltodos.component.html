@@ -27,3 +27,9 @@
         </div>
     </div>
 </div>
+
+<div [class]="'filters-smalldisplay ' + (themeService.currentTheme() ? 'dark' : 'light')">
+    <a [class]="'filter ' + (mode() === 'all' ? 'active' : '')" (click)="changeMode('all')"> All </a>
+    <a [class]="'filter ' + (mode() === 'active' ? 'active' : '')" (click)="changeMode('active')"> Active </a>
+    <a [class]="'filter ' + (mode() === 'completed' ? 'active' : '')" (click)="changeMode('completed')"> Completed </a>
+</div>

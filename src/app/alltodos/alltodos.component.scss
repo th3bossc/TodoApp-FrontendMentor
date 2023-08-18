@@ -68,14 +68,47 @@
             color : gray;
         }
 
+        @media (width < 600px) {
+            .filters {
+                display : none;
+            }
+        }
+        @media (width >= 600px) {
+            .filters {
+                display : flex;
+            }
+        }
         .filters {
-            display : flex;
             gap : 1rem;
 
             .active {
                 color : blue;
             }
         }
+    }
+}
+
+@media (width >= 600px) {
+    .filters-smalldisplay {
+        display : none;
+    }
+}
+@media (width < 600px) {
+    .filters-smalldisplay {
+        margin-top : 2rem;
+        border-radius : 5px;
+        display : flex;
+        gap : 1rem;
+        justify-content: center;
+        &.dark {
+            background-color: hsl(237, 14%, 26%);
+            filter : drop-shadow(0 0 4px #111);
+        }
+        &.light {
+            background-color: hsl(0, 0%, 98%);
+            filter : drop-shadow(0 0 4px #eee);
+        }
+        padding : 1rem 0;
     }
 }
 
